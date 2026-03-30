@@ -7,11 +7,9 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Local jQuery file -->
-  <script src="js/jquery-3.7.1.js"></script>
+  <!-- jQuery file & our custom JS file-->
 
-  <!-- Our custom JavaScript file -->
-  <script src="js/filter-cards.js" defer></script>
+
 </head>
 <body>
 
@@ -25,18 +23,18 @@
     <!-- Filter buttons -->
     <!-- These buttons control which cards are shown -->
     <section class="filters">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="web">Web</button>
-      <button class="filter-btn" data-filter="design">Design</button>
-      <button class="filter-btn" data-filter="photo">Photo</button>
-      <button class="filter-btn" data-filter="video">Video</button>
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Web</button>
+      <button class="filter-btn">Design</button>
+      <button class="filter-btn">Photo</button>
+      <button class="filter-btn">Video</button>
     </section>
 
     <!-- Card grid -->
     <!-- Each card belongs to one category using a class like web, design, photo, or video -->
     <section class="card-grid">
 
-      <article class="card web">
+      <article class="card">
         <img src="images/stock10.png" alt="Band Website Redesign project">
         <div class="card-text">
           <p class="category-label">Web</p>
@@ -130,12 +128,12 @@
       </ol>
 
       <h3>How the card layout works</h3>
-<p>
-  The cards are placed inside a CSS Grid container. The grid uses
-  <code>repeat(auto-fit, minmax(240px, 1fr))</code>, which allows the browser
-  to automatically decide how many columns can fit while keeping each card at
-  least 240 pixels wide.
-</p>
+      <p>
+        The cards are placed inside a CSS Grid container. The grid uses
+        <code>repeat(auto-fit, minmax(240px, 1fr))</code>, which allows the browser
+        to automatically decide how many columns can fit while keeping each card at
+        least 240 pixels wide.
+      </p>
 
       <h3>How the interactive part works</h3>
       <p>

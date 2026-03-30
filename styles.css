@@ -31,8 +31,7 @@
 /* Style the currently selected button.
    This class is added and removed with jQuery. */
 .filter-btn.active {
-  background-color: #805ad5;
-  color: white;
+  
 }
 
 
@@ -49,7 +48,7 @@
    can fit in each row without needing media queries. */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: ;
   gap: 1.5rem;
   background-color: white;
   padding: 1rem;
