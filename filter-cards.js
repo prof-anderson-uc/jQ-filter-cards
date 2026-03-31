@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     // Remove the active class from every filter button.
     // This clears the old selected button style.
-    $(".filter-btn").;
+    $(".filter-btn"). ;
 
     // Add the active class to the button that was clicked.
     // This highlights the current choice.
